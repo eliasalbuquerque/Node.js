@@ -1,5 +1,4 @@
 # Node.js
 
-All my projects whith enphase in node.js is to be here.  
-In this case, I'll put all my new knowledges and future projects.  
-Few free to contribute with issues and share your knowledge ok. Tks!  
+All of my projects with an emphasis on node.js will be here.
+In that case, I will put here all my new knowledge and future projects. Feel free to contribute and share your knowledge ok. Tks!
