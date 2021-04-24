@@ -1,5 +1,6 @@
-//  alert('hello word by senac')
-// 
+/*
+alert('hello word by senac')
+*/
 //  o comando acima esta casusando os seguintes erros:
 //      . Object.<anonymous>
 //      . Module._compile
@@ -26,7 +27,7 @@ console.log('hello word by senac\n');
 // 
 // Criar a string de interacao, salvar variaveis e dar um print;
 // Nao esquecer de fechar o console;
-
+/*
 const readline = require('readline');
 const rl = readline.createInterface({
     input: process.stdin,
@@ -44,10 +45,26 @@ rl.on("close", function() {
     console.log("---\nBYE BYE !!!");
     process.exit(0);
 });
+*/
+
+const readline = require('readline')
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+rl.question('Qual o seu nome? ', function(nome) {
+    rl.question('Qual o seu sobrenome? ', function(sobre) {
+        console.log(`Seu nome é ${nome} ${sobre}.`)
+        rl.close()
+    })
+})
 
 
-// const prompt = require('prompt')
-// prompt.start();
-
-// var nome = prompt('Digite seu nome: ');
-// console.log('Seu nome e: ' + nome);
+// --- does not work;
+/*
+const prompt = require('prompt')
+prompt.start();
+var nome = prompt('Digite seu nome: ');
+console.log('Seu nome e: ' + nome);
+*/
